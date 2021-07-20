@@ -1,10 +1,9 @@
 import {useEffect} from "react"
-import 'aos/dist/aos.css'
-import AOS from 'aos'
+import  useAOS from './hooks/useAOS'
 
 export default function App() {
   useEffect(()=>{
-     AOS.init({duration: 1500})
+     useAOS({duration:1600})
   },[])
   return (
     <div className="App">
